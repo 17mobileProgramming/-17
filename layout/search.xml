@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,35 +18,42 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
 
-            android:background="@drawable/border1">
+            android:background="@drawable/border2">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                android:background="@drawable/search1" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search2"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:layout_marginLeft="8dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginleft="5dp" />
+                android:hint="검색하기"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
 
 
         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="키워드" />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:background="@drawable/border1"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:layout_margin="5dp"
-                android:text="키워드"
-                android:background="#7ABA56"/>
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -57,27 +66,31 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="맛1"
+                        android:hint="맛1"
                         android:textSize="16dp"
-                        android:layout_marginLeft="3dp"/>
+                        android:layout_marginLeft="3dp"
+                        android:backgroundTint="@color/buttongreen"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="맛2"
+                        android:hint="맛2"
                         android:textSize="16dp"
-                        android:layout_marginLeft="3dp"/>
+                        android:layout_marginLeft="3dp"
+                        android:backgroundTint="@color/buttongreen"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="맛3"
+                        android:hint="맛3"
                         android:textSize="16dp"
-                        android:layout_marginLeft="3dp"/>
+                        android:layout_marginLeft="3dp"
+                        android:backgroundTint="@color/buttongreen"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="맛4"
+                        android:hint="맛4"
                         android:textSize="16dp"
-                        android:layout_marginLeft="3dp"/>
+                        android:layout_marginLeft="3dp"
+                        android:backgroundTint="@color/buttongreen"/>
 
 
                 </TableRow>
@@ -88,9 +101,10 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="맛5"
-                        android:textSize="16dp"
-                        android:layout_marginLeft="3dp"/>
+                        android:hint="맛5"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="3dp"
+                        android:backgroundTint="@color/buttongreen"/>
 
 
 

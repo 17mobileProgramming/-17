@@ -10,18 +10,59 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
+        android:orientation="vertical"
+        android:background="#ecfaf5">
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
 
-            android:text="자가키트"
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="자"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sunc"/>
 
-            android:textSize="35dp"
-            android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취생을 위한"
+                android:textSize="35sp"
+                android:fontFamily="@font/sunc"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sunc"
+                android:autoSizeTextType="uniform"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="천대의 밀"
+                android:textSize="35sp"
+                android:fontFamily="@font/sunc"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="키트"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sunc"/>
+
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +79,9 @@
                 android:gravity="center_vertical"
                 android:textColor="@color/black"
                 android:textSize="22dp"
-                tools:text="Log in" />
+                tools:text="Log in"
+                android:textStyle="bold"
+                android:fontFamily="@font/sunc"/>
 
             <TextView
                 android:id="@+id/tvToYourAccount"
@@ -48,6 +91,7 @@
                 android:gravity="center_vertical"
                 android:textColor="@color/black"
                 android:textSize="22dp"
+                android:fontFamily="@font/sunc"
                 tools:text=" to your Account" />
         </LinearLayout>
 
