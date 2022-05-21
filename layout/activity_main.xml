@@ -14,8 +14,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="메인화면"
-            />
+            android:text="메인화면" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -35,14 +34,16 @@
     </com.google.android.material.tabs.TabLayout>
 
     <FrameLayout
+        android:id="@+id/mainframe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="7dp"
+        android:layout_below="@+id/tabs"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:id="@+id/mainframe"
-        android:layout_below="@+id/tabs">
-
+        android:orientation="vertical">
 
 
     </FrameLayout>

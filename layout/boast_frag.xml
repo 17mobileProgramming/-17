@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="user name"
+                android:hint="user name"
                 android:textSize="22sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="15dp"/>
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:hint="숫자"
-                android:textSize="17dp"
+                android:textSize="17sp"
                 android:layout_gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -61,20 +61,20 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/border1"
                 android:orientation="vertical">
 
 
-                <TextView
+                <EditText
                     android:layout_margin="7dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ingredient"
                     android:hint="뭐가있을까zzz"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textColor="#000"/>
 
 
@@ -96,7 +96,7 @@
                 android:background="@drawable/border1"
                 android:orientation="vertical">
 
-                <TextView
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="라면"
