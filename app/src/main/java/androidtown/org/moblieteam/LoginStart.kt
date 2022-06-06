@@ -3,6 +3,7 @@ package androidtown.org.moblieteam
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidtown.org.moblieteam.databinding.ActivityLoginStartBinding
 import androidtown.org.moblieteam.databinding.ActivityMainBinding
 import androidx.databinding.DataBindingUtil
@@ -33,5 +34,18 @@ class LoginStart : AppCompatActivity() {
             val intent = Intent(this,Join::class.java)
             startActivity(intent)
         }
+        binding.noAccountBtn.setOnClickListener{
+            auth.signInAnonymously().addOnCompleteListener(this) {task->
+                if(task.isSuccessful){
+                    Toast.makeText(this,"로그인 성공",Toast.LENGTH_LONG).show()
+                    val intent = Intent(this,MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                }else{
+                    Toast.makeText(this,"로그인 실패",Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+
     }
 }

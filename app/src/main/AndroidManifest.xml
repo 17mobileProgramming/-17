@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="androidtown.org.moblieteam">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +13,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoblieTeam">
         <activity
-            android:name=".MyPage"
+            android:name=".StoreActivity"
             android:exported="true" />
         <activity
-            android:name=".AlreadyLogin"
+            android:name=".ProfileChange"
+            android:exported="true" />
+        <activity
+            android:name=".setting.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardInsideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".board.BoardWriteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".contentsList.ContentShowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".contentsList.ContentsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyPage"
             android:exported="true" />
         <activity
             android:name=".LoginStart"

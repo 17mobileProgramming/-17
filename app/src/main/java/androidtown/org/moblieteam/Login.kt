@@ -23,10 +23,10 @@ class Login : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this,R.layout.activity_login)
 
-        binding.buttonLogIn.setOnClickListener{
+        binding.loginBtn.setOnClickListener{
 
-            val email = binding.editTextLoginEmail.text.toString()
-            val password = binding.editTextLoginPassword.text.toString()
+            val email = binding.emailArea.text.toString()
+            val password = binding.passwordArea.text.toString()
 
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
